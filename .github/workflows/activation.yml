@@ -5,7 +5,7 @@ on:
 
 jobs:
   activation:
-    name: Request manual activation file 🔑
+    name: Request manual activation file
     runs-on: ubuntu-latest
     
     steps:
@@ -15,7 +15,7 @@ jobs:
           unityVersion: 2023.3.62f1
           
       - name: Expose as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Manual Activation File
           path: "*.alf"
